@@ -1,0 +1,52 @@
+/* General container for forms and main content */
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.title {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Group for form elements */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Styling for text inputs and textareas */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+}
+
+/* Placeholder text styling */
+.form-control::placeholder {
+  color: #999;
+}
+
+/* Styling for buttons */
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Button hover effect */
+.btn:hover {
+  background-color: #0056b3;
+}

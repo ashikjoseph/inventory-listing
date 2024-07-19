@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import AddInventory from './components/AddInventory';
+import ListInventory from './components/ListInventory';
 
 function App() {
+  const [uploadInventoryStatus, setUploadInventoryStatus] = useState({})
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className='app-container'>
+      <header className='app-header'>
+        <h1>Inventory Management</h1>
       </header>
+      <main>
+        <AddInventory setUploadInventoryStatus={setUploadInventoryStatus}/>
+        <ListInventory uploadInventoryStatus={uploadInventoryStatus} />
+      </main>
     </div>
   );
 }
